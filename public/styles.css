@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);  
+    line-height: var(--line-height);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+header {
+    background-color: var(--color-bg-header);
+    padding: 1rem; 
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+    font-size: var(--font-size-h2);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+
+nav a {
+    color: var(--color-link);
+    font-size: var(--font-size-base); 
+}
+
+main {
+    background-color: var(--color-bg);
+    padding: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.intro {
+    display: flex;
+    gap: 1rem; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact {
+    flex: 0 0 12rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact dl {
+    display: grid;
+    grid-template-columns: 6rem 1fr; 
+}
+
+.contact dt {
+    font-weight: bold;
+    font-size: var(--font-size-base); 
+}
+
+.contact dd {
+    margin-left: 0;
+    font-size: var(--font-size-base); 
+}
+
+.intro-text {
+    flex: 1rem;
+}
+
+
+.intro-text hr {
+    border: 0.0625rem solid var(--color-accent); 
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: var(--font-size-base); 
+    max-width: 65ch;
+}
+
+#skills ul {
+    padding-left: 1.5rem;
+    font-size: var(--font-size-base); 
+    line-height: 1.6;
+}
+
+a:hover,
+a:focus {
+    outline: 2px dashed var(--color-accent);
+    outline-offset: 0.25rem;
+}

@@ -1,0 +1,21 @@
+:root {
+    --color-bg: #ffffff;
+    --color-bg-header: #001010;
+    --color-text: #001010;
+    --color-text-inverted: #ffffff;
+    --color-accent: lightpink;
+    --color-link: lightpink;
+    --color-link-hover: lightpink;
+    --color-heading: #3b5ccc;
+
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Roboto", sans-serif;
+    --font-size-base: 1.125rem;      
+    --font-size-h2: 2rem;          
+    --line-height: 1.6;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+}
