@@ -6,7 +6,9 @@
     --color-accent: lightpink;
     --color-link: lightpink;
     --color-link-hover: lightpink;
+    --color-link-contrast: #0000ee;
     --color-heading: #3b5ccc;
+    --color-header-text: #ffffff;
 
     --font-heading: "Playfair Display", serif;
     --font-body: "Roboto", sans-serif;
@@ -18,4 +20,16 @@
     --space-sm: 1rem;
     --space-md: 1.5rem;
     --space-lg: 2rem;
+}
+
+body.dark-mode {
+    --color-bg: #00101a;
+    --color-text: #f2f6ff;
+    --color-text-inverted: #00101a;
+    --color-accent: lightpink;
+    --color-link: lightpink;
+    --color-link-hover: lightpink;
+    --color-heading: #cfe3ff;
+    --color-header-text: lightpink;
+    --color-link-contrast: #c3e2ff;
 }
