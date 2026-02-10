@@ -4,6 +4,7 @@
     --color-text: #001010;
     --color-text-inverted: #ffffff;
     --color-accent: lightpink;
+    --color-on-accent: #001010;
     --color-link: lightpink;
     --color-link-hover: lightpink;
     --color-link-contrast: #0000ee;
@@ -27,6 +28,7 @@ body.dark-mode {
     --color-text: #f2f6ff;
     --color-text-inverted: #00101a;
     --color-accent: lightpink;
+    --color-on-accent: #00101a;
     --color-link: lightpink;
     --color-link-hover: lightpink;
     --color-heading: #cfe3ff;

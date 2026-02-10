@@ -75,8 +75,8 @@ h2 {
 
 .menu-button {
     border: 2px solid var(--color-accent);
-    background: transparent;
-    color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-on-accent);
     padding: 0.35rem 0.75rem;
     font: inherit;
     border-radius: 999px;
@@ -85,8 +85,7 @@ h2 {
 
 .menu-button:hover,
 .menu-button:focus {
-    background: var(--color-accent);
-    color: var(--color-bg);
+    filter: brightness(0.95);
 }
 
 .site-header.menu-open .site-nav {
@@ -191,6 +190,68 @@ section {
     padding-left: 1.5rem;
     font-size: var(--font-size-base); 
     line-height: 1.6;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-field input[type="email"],
+.form-field textarea {
+    width: 100%;
+    max-width: 40rem;
+    padding: 0.75rem 1rem;
+    font: inherit;
+    border: 2px solid var(--color-accent);
+    border-radius: 0.5rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.form-field textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.form-field input[type="email"]::placeholder,
+.form-field textarea::placeholder {
+    color: #6b7280;
+}
+
+fieldset.form-field {
+    border: 2px solid var(--color-accent);
+    padding: 0.75rem 1rem 1rem;
+    width: 100%;
+    max-width: 40rem;
+}
+
+fieldset.form-field legend {
+    padding: 0 0.5rem;
+    font-weight: normal;
+}
+
+.form-error {
+    color: #b00020;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+input[type="submit"] {
+    border: 2px solid var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+    padding: 0.5rem 1rem;
+    font: inherit;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    filter: brightness(0.95);
 }
 
 a:hover,

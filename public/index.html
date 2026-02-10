@@ -64,9 +64,43 @@
             </ul>
         </section>
 
+        <section id="contact-form-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-field">
+                    <label for="email">Email address (required)</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" placeholder="you@example.com">
+                </div>
+
+                <fieldset class="form-field">
+                    <legend>How are you today? (required)</legend>
+                    <label>
+                        <input type="checkbox" name="mood" value="not-good" aria-required="true">
+                        Not good
+                    </label>
+                    <label>
+                        <input type="checkbox" name="mood" value="not-bad" aria-required="true">
+                        Not bad
+                    </label>
+                    <label>
+                        <input type="checkbox" name="mood" value="awesome" aria-required="true">
+                        Awesome
+                    </label>
+                </fieldset>
+
+                <div class="form-field">
+                    <label for="message">Message (required)</label>
+                    <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <input type="submit" value="Send message">
+            </form>
+        </section>
+
     </main>
 
     <script type="module" src="header.mjs"></script>
+    <script type="module" src="form.mjs"></script>
     <script type="module" src="test.mjs"></script>
 </body>
 </html>
